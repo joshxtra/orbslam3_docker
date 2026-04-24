@@ -26,7 +26,7 @@ docker pull jahaniam/orbslam3:ubuntu20_noetic_cuda
 
 # Remove existing container
 docker rm -f orbslam3 &>/dev/null
-[ -d "ORB_SLAM3" ] && sudo rm -rf ORB_SLAM3 && mkdir ORB_SLAM3
+[ -d "ORB_SLAM3" ] # && sudo rm -rf ORB_SLAM3 && mkdir ORB_SLAM3
 
 # Create a new container
 docker run -td --privileged --net=host --ipc=host \
